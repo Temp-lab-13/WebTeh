@@ -10,16 +10,18 @@ function send() {
     // Проверка на наличие текста в полях ввода имени и сообщения. 
     if (name == '') {
         document.getElementById('error').innerText = "Введите ваше Имя!"
+        return;
     } else if (message == '') {
         document.getElementById('error').innerText = "Введите ваше сообещине!"
-    } else {
-        //Вывод данных в поле в формате: Имя: сообщение 
-        document.getElementById('result').innerText = name + ": " + message;
-        //Очистка текста ошибки, если она была ранее.
-        document.getElementById('error').innerText = "";
-        // Очистка поля ввода для собщения.
-        document.getElementById('message').value = "";
+        return;
     }
+    //Вывод данных в поле в формате: Имя: сообщение 
+    document.getElementById('result').innerText = `${name}: ${message}`;
+    //Очистка текста ошибки, если она была ранее.
+    document.getElementById('error').innerText = "";
+    // Очистка поля ввода для собщения.
+    document.getElementById('message').value = "";
+
     //document.getElementById('result').value = message;
     //alert(`${x} * 5 = ${resuls}`)
 
