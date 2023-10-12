@@ -1,0 +1,15 @@
+<user>
+    <person>
+        <id>1</id>
+        <fullName>
+            <surname>Иванов</surname>
+            <name>Иван</name>
+            <patronymic>Иванович</patronymic>
+        </fullName>
+        <information>
+            <birthdate>01.01.1990</birthdate>
+            <birthplace>Москва</birthplace>
+            <phone>8 926 766 48 48</phone>
+        </information>
+    </person>
+</user>
